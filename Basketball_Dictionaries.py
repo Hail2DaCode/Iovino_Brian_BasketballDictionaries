@@ -7,7 +7,7 @@ class Player:
         self.team = dic["team"]
 
     @classmethod
-    def printnew_team(cls):
+    def print_name_new_team(cls):
         for player in cls.new_team:
             print(player.name)
 
@@ -77,4 +77,4 @@ print(player_jason.name)
 print(player_kevin.name)
 print(player_kyrie.name)
 print(Player.new_team)
-Player.printnew_team()
+Player.print_name_new_team()
