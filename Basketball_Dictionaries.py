@@ -10,6 +10,11 @@ class Player:
     def print_name_new_team(cls):
         for player in cls.new_team:
             print(player.name)
+    @classmethod
+    def get_team(cls, team_list):
+        for player in team_list:
+            Player.new_team.append(Player(player))
+
 
 
 kevin = {
@@ -66,7 +71,7 @@ players = [
 ]
 
 
-for player in players:
+'''for player in players:
     Player.new_team.append(Player(player))
     
 # Create your Player instances here!
@@ -77,4 +82,6 @@ print(player_jason.name)
 print(player_kevin.name)
 print(player_kyrie.name)
 print(Player.new_team)
+Player.print_name_new_team()'''
+Player.get_team(players)
 Player.print_name_new_team()
